@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Uni2Exe06 {
+
+    //Escreva um programa que leia o número de um funcionário, seu número de horas trabalhadas,
+    //o valor que recebe por hora e calcula o salário desse funcionário.
+    //A seguir, mostre o número e o salário do funcionário, com duas casas decimais.
+    public static void main(String[] args) {
+     
+     Scanner teclado = new Scanner (System.in);  
+
+     System.out.println("Qual o seu número de funcionário na empresa: ");
+     int numeroFuncionario = teclado.nextInt();
+
+     System.out.println("Digite seu número de horas trabalhadas: ");
+     int horas = teclado.nextInt();
+
+     System.out.println("Digite o valor que você recebe por hora trabalhada: ");
+     int valor = teclado.nextInt();
+
+     int salario = horas * valor;
+
+     int vsalario  = salario*100;
+     int salarioFinal = vsalario/100;
+
+     System.out.println("Funcionário de número "+numeroFuncionario+ " seu salário proporcionado ao número de horas trabalhadas é de " +salarioFinal);
+     teclado.close();
+
+
+    }
+}
+
+
