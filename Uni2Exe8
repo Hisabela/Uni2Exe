@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Uni2Exe08 {
+
+    //Neste problema, deve-se ler o código de uma peça 1, o número de peças 1, o valor unitário de cada peça 1, o código
+    // de uma peça 2, o número de peças 2 e o valor unitário de cada peça 2. Após, calcule e mostre o valor a ser pago.
+ public static void main(String[] args) {
+        
+ Scanner teclado  = new Scanner (System.in);
+  
+ // peça 1
+ 
+ System.out.println("Digite o código da sua primeira peça: ");
+ double codigo1 = teclado.nextDouble();
+
+ System.out.println("Digite o número de peças que você irá adquirir: ");
+ double quantidade1 = teclado.nextDouble();
+
+ System.out.println("Digite o valor unitário da primeira peça: ");
+ double unitario1 = teclado.nextDouble();
+ 
+ //peça 2
+ 
+ System.out.println("Digite o código da sua segunda peça: ");
+ double codigo2 = teclado.nextDouble();
+
+ System.out.println("Digite o número de peças que você irá adquirir: ");
+ double quantidade2 = teclado.nextDouble();
+
+ System.out.println("Digite o valor unitário da segunda peça: ");
+ double unitario2 = teclado.nextDouble();
+
+ double peça1 = (quantidade1 * unitario1); 
+ 
+ double peça2 = (quantidade2 * unitario2); 
+
+ System.out.println("A peça de código " +codigo1+ " ficou no valor de "+peça1+". A peça de código "+codigo2+" ficou no valor de "+peça2);
+
+teclado.close();
+
+    }
+
+}
