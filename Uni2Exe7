@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Uni2Exe07 {
+
+//Faça um programa que leia o nome de um vendedor, o seu salário fixo e o total de vendas efetuadas por ele no mês (em dinheiro). 
+//Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, informar o total a receber no final do mês,
+//com duas casas decimais.
+
+public static void main (String [] args){
+
+    Scanner teclado = new Scanner (System.in);
+
+System.out.println("Olá vendedor, digite seu nome: ");
+int nome = teclado.nextInt();
+
+System.out.println("Digite seu salário fixo: ");
+double salario = teclado.nextDouble();
+
+System.out.println("Digite o total de vendas efuatadas neste mês (em dinheiro): ");
+double vendas = teclado.nextDouble();
+
+double porcentagem = 15;
+
+double resultadoPorcentagem = ((vendas * porcentagem)/100);
+
+double resultadoFinal = (salario+resultadoPorcentagem);
+
+System.out.println("Vendendor(a) "+nome+ " o total do seu recebimento ao final do mês é de " + resultadoFinal);
+
+teclado.close();
+ }
+}
