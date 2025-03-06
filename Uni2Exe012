@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Uni2Exe12 {
+
+public static void main(String[] args) {
+    
+    Scanner teclado = new Scanner(System.in);
+
+    //Leia os quatro valores correspondentes aos eixos x e y de dois pontos quaisquer no plano,
+    // p1(x1,y1) e p2(x2,y2) e calcule a distância entre eles, mostrando 4 casas decimais após a vírgula, segundo a fórmula:
+
+ System.out.println("Escreva o valor x1: ");
+ double x1 = teclado.nextDouble();
+
+ System.out.println("Escreva o valor y1: ");
+ double y1 = teclado.nextDouble();
+
+ System.out.println("Escreva o valor x2: ");
+ double x2 = teclado.nextDouble();
+
+ System.out.println("Escreva o valor y1: ");
+ double y2 = teclado.nextDouble();
+
+ double valorX = x2-x1;
+ double valorY = y2-y1;
+ double valorElevado2X = Math.pow(valorX,2);
+ double valorElevado2Y = Math.pow(valorY,2);
+ double valorSomado = valorElevado2X + valorElevado2Y;
+ double valorRaizQ = Math.sqrt(valorSomado);
+ String valorFinal = String.format("%.4f", valorRaizQ);
+
+System.out.println("O valor fica "+valorFinal);
+
+teclado.close();
+ }
+}
