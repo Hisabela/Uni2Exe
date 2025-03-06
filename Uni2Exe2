@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Uni2Exe02 {
+
+    //Leia 2 valores inteiros e imprima sua multiplicação.
+
+    public static void main(String[] args) {
+       
+    Scanner teclado = new Scanner (System.in);
+
+    System.out.println("Digite o primeiro valor: ");
+     int valor1 = teclado.nextInt();
+
+    System.out.println("Digite o segundo valor: ");
+     int valor2 = teclado.nextInt();
+
+    int valorFinal = valor1 * valor2;
+   
+    System.out.println("A multiplicação dos valores fica de " + valorFinal);
+    teclado.close();
+
+
+    }
+}
