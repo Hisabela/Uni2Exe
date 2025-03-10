@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class Uni2Exe14 {
+
+public static void main(String[] args) {
+ 
+    Scanner teclado = new Scanner(System.in);
+
+    //Leia um valor inteiro. A seguir, calcule o menor número de notas possíveis (cédulas) no qual o valor pode ser decomposto.
+    // As notas consideradas são de 100, 50, 20, 10, 5, 2 e 1. A seguir mostre o valor lido e a relação de notas necessárias.
+
+ System.out.println("Escreva um valor: ");
+ int valor = teclado.nextInt();
+
+int cem = valor%100;
+
+System.out.println("Valor lido: " + cem);//+ " dividido por");
+System.out.println("Relação de notas necessárias " + valor/100);
+
+int ciquenta = valor%50;
+
+System.out.println("Valor lido: " + ciquenta);// + " dividido por");
+System.out.println("Relação de notas necessárias " + valor/50);
+
+int vinte = valor%20;
+
+System.out.println("Valor lido: "+ vinte);// + " dividido por");
+System.out.println("Relação de notas necessárias " + valor/20);
+
+int dez = valor%10;
+
+System.out.println("Valor lido: "+ dez);// + " dividido por");
+System.out.println("Relação de notas necessárias " + valor/10);
+
+int cinco = valor%5;
+
+System.out.println("Valor lido: "+ cinco);// + " dividido por");
+System.out.println("Relação de notas necessárias " + valor/5);
+
+int dois = valor%2;
+
+System.out.println("Valor lido: "+ dois);// + " dividido por");
+System.out.println("Relação de notas necessárias " + valor/2);
+
+teclado.close();
+
+ }
+}
