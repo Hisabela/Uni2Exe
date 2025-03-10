@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Uni2Exe18 {
+
+public static void main(String[] args) {
+    
+Scanner teclado = new Scanner (System.in);
+
+//Numa loja de materiais de construção, um azulejo estampado custa R$ 12,50.
+// Leia o comprimento e altura de uma parede (em metros) e escreva o valor gasto com a compra de azulejos. 
+//Considere que um metro quadrado é formado por 9 azulejos.
+
+System.out.println("Digite o cumprimento: ");
+double comp = teclado.nextDouble();
+
+System.out.println("Digite a altura: ");
+double alt = teclado.nextDouble();
+
+double multi = comp*alt;
+double azul = multi*9;
+double valor = azul*12.50;
+
+System.out.println("O valor da compra será de "+String.format("%.2f",valor));
+
+//duas casas decimais
+
+teclado.close();
