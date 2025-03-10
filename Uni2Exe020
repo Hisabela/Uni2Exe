@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Uni2Exe20 {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("Digite o número de dobras (sempre par): ");
+        int dobras = teclado.nextInt();
+
+        int quadradosVisiveis = 1;
+
+        for (int i = 0; i < dobras / 2; i++) {
+            quadradosVisiveis *= 2; 
+        }
+
+        System.out.println("Número de quadrados visíveis: " + quadradosVisiveis);
+
+        teclado.close();
+    }
+}
