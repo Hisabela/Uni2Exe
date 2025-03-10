@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class Uni2Exe15 {
+
+
+    //Leia um valor de ponto flutuante com duas casas decimais. Este valor representa um valor monetário. 
+    //A seguir, calcule o menor número de notas e moedas possíveis no qual o valor pode ser decomposto. 
+    //As notas consideradas são de 100, 50, 20, 10, 5, 2.
+    // As moedas possíveis são de 1, 0.50, 0.25, 0.10, 0.05 e 0.01. A seguir mostre a relação de notas necessárias.
+
+public static void main(String[] args){
+ 
+    Scanner teclado = new Scanner(System.in);
+
+ System.out.println("Escreva um valor: ");
+ int valor = teclado.nextInt();
+
+int cem = valor/100;
+System.out.println("Relação de notas necessárias " + cem);
+
+int ciquenta = valor/50;
+System.out.println("Relação de notas necessárias " + ciquenta);
+
+int vinte = valor/20;
+System.out.println("Relação de notas necessárias " + vinte);
+
+int dez = valor/10;
+System.out.println("Relação de notas necessárias " + dez);
+
+int cinco = valor/5;
+System.out.println("Relação de notas necessárias " + cinco);
+
+int dois = valor/2;
+System.out.println("Relação de notas necessárias " + dois);
+
+int um = valor/1;
+System.out.println("Relação de notas necessárias " + um);
+
+int cciquenta = (int)(valor/0.50);
+System.out.println("Relação de notas necessárias "+cciquenta);
+
+int cvcinco = (int)(valor/0.25);
+System.out.println("Relação de notas necessárias "+cvcinco);
+
+int cdez = (int)(valor/0.10);
+System.out.println("Relação de notas necessárias "+cdez);
+
+int ccinco = (int)(valor/0.5);
+System.out.println("Relação de notas necessárias "+ccinco);
+
+int cum = (int)(valor/0.1);
+System.out.println("Relação de notas necessárias "+cum);
+
+teclado.close();
+
+ }
+}
