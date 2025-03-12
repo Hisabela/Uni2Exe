@@ -6,16 +6,12 @@ public class Uni2Exe13 {
 //Leia a distância (em Km) e calcule quanto tempo leva (em minutos) para o carro Y tomar essa distância do outro carro.
 
  public static void main(String[] args) {
-        
- double velocidadeX = 60;
- double velocidadeY = 90;
- double tempo = 2;
+ int distancia = scanner.nextInt();
 
- double velocidade = velocidadeY - velocidadeX;
+        // Calculando o tempo necessário
+        int tempo = distancia * 2;
 
- double resultado = velocidade*tempo;
+        // Imprimindo o tempo seguido de "minutos"
+        System.out.println(tempo + " minutos");
 
- System.out.println("O tempo necessário será de "+resultado+" minutos");
-
-    }
 }
